@@ -1,4 +1,4 @@
-<h3 align=center>Kyaliko RPC 🎉</h><img align=right height=200 src="https://cdn.discordapp.com/attachments/1053714864054468619/1053715108892782693/Kyaliko_RPC.PNG.png" >
+<h3 align=center>Kyaliko RPC 🎉</h><img align=right height=200 src="https://cdn.discordapp.com/attachments/1053714864054468619/1053721689466343485/Kyaliko_RPC_Trans.png" >
 
 <h2 align=center>About</h2>
 
