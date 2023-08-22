@@ -33,6 +33,10 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.web1 = new Kyaliko_RPC.UserControls.Web();
+            this.label4 = new System.Windows.Forms.Label();
+            this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.Initialize = new Guna.UI2.WinForms.Guna2Button();
+            this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
             this.SmallText = new Guna.UI2.WinForms.Guna2TextBox();
             this.LargeText = new Guna.UI2.WinForms.Guna2TextBox();
             this.buttonspanel = new Guna.UI2.WinForms.Guna2Panel();
@@ -50,8 +54,6 @@
             this.Details = new Guna.UI2.WinForms.Guna2TextBox();
             this.ID = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.Initialize = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -81,6 +83,10 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.guna2Panel1.Controls.Add(this.web1);
+            this.guna2Panel1.Controls.Add(this.label4);
+            this.guna2Panel1.Controls.Add(this.guna2ToggleSwitch1);
+            this.guna2Panel1.Controls.Add(this.Initialize);
+            this.guna2Panel1.Controls.Add(this.UpdateBtn);
             this.guna2Panel1.Controls.Add(this.SmallText);
             this.guna2Panel1.Controls.Add(this.LargeText);
             this.guna2Panel1.Controls.Add(this.buttonspanel);
@@ -93,7 +99,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 30);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1055, 420);
+            this.guna2Panel1.Size = new System.Drawing.Size(908, 394);
             this.guna2Panel1.TabIndex = 0;
             // 
             // web1
@@ -103,6 +109,85 @@
             this.web1.Name = "web1";
             this.web1.Size = new System.Drawing.Size(0, 0);
             this.web1.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(230, 293);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(138, 34);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Show Timestamps";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2ToggleSwitch1
+            // 
+            this.guna2ToggleSwitch1.Animated = true;
+            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(380, 300);
+            this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
+            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(35, 20);
+            this.guna2ToggleSwitch1.TabIndex = 13;
+            this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch1.CheckedChanged += new System.EventHandler(this.guna2ToggleSwitch1_CheckedChanged);
+            // 
+            // Initialize
+            // 
+            this.Initialize.Animated = true;
+            this.Initialize.BackColor = System.Drawing.Color.Transparent;
+            this.Initialize.BorderRadius = 10;
+            this.Initialize.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Initialize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Initialize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Initialize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Initialize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Initialize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Initialize.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Initialize.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Initialize.ForeColor = System.Drawing.Color.White;
+            this.Initialize.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.Initialize.Location = new System.Drawing.Point(233, 342);
+            this.Initialize.Name = "Initialize";
+            this.Initialize.PressedColor = System.Drawing.Color.Transparent;
+            this.Initialize.PressedDepth = 0;
+            this.Initialize.Size = new System.Drawing.Size(132, 34);
+            this.Initialize.TabIndex = 1;
+            this.Initialize.Text = "Initialize";
+            this.Initialize.UseTransparentBackground = true;
+            this.Initialize.Click += new System.EventHandler(this.Initialize_Click);
+            // 
+            // UpdateBtn
+            // 
+            this.UpdateBtn.Animated = true;
+            this.UpdateBtn.BackColor = System.Drawing.Color.Transparent;
+            this.UpdateBtn.BorderRadius = 10;
+            this.UpdateBtn.Cursor = System.Windows.Forms.Cursors.Default;
+            this.UpdateBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.UpdateBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.UpdateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.UpdateBtn.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.UpdateBtn.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateBtn.ForeColor = System.Drawing.Color.White;
+            this.UpdateBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.UpdateBtn.Location = new System.Drawing.Point(380, 342);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.PressedColor = System.Drawing.Color.Transparent;
+            this.UpdateBtn.PressedDepth = 0;
+            this.UpdateBtn.Size = new System.Drawing.Size(132, 34);
+            this.UpdateBtn.TabIndex = 4;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseTransparentBackground = true;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // SmallText
             // 
@@ -121,12 +206,12 @@
             this.SmallText.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SmallText.ForeColor = System.Drawing.Color.White;
             this.SmallText.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SmallText.Location = new System.Drawing.Point(507, 349);
+            this.SmallText.Location = new System.Drawing.Point(118, 342);
             this.SmallText.Name = "SmallText";
             this.SmallText.PasswordChar = '\0';
             this.SmallText.PlaceholderText = "SmallText";
             this.SmallText.SelectedText = "";
-            this.SmallText.Size = new System.Drawing.Size(135, 34);
+            this.SmallText.Size = new System.Drawing.Size(100, 34);
             this.SmallText.TabIndex = 7;
             // 
             // LargeText
@@ -146,12 +231,12 @@
             this.LargeText.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LargeText.ForeColor = System.Drawing.Color.White;
             this.LargeText.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LargeText.Location = new System.Drawing.Point(342, 349);
+            this.LargeText.Location = new System.Drawing.Point(12, 342);
             this.LargeText.Name = "LargeText";
             this.LargeText.PasswordChar = '\0';
             this.LargeText.PlaceholderText = "LargeText";
             this.LargeText.SelectedText = "";
-            this.LargeText.Size = new System.Drawing.Size(135, 34);
+            this.LargeText.Size = new System.Drawing.Size(100, 34);
             this.LargeText.TabIndex = 6;
             // 
             // buttonspanel
@@ -160,9 +245,9 @@
             this.buttonspanel.Controls.Add(this.button2panel);
             this.buttonspanel.Controls.Add(this.button1panel);
             this.buttonspanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.buttonspanel.Location = new System.Drawing.Point(328, 37);
+            this.buttonspanel.Location = new System.Drawing.Point(224, 44);
             this.buttonspanel.Name = "buttonspanel";
-            this.buttonspanel.Size = new System.Drawing.Size(494, 242);
+            this.buttonspanel.Size = new System.Drawing.Size(477, 200);
             this.buttonspanel.TabIndex = 12;
             // 
             // button2panel
@@ -171,9 +256,9 @@
             this.button2panel.Controls.Add(this.Button2Enable);
             this.button2panel.Controls.Add(this.ButtonLink2);
             this.button2panel.Controls.Add(this.ButtonText2);
-            this.button2panel.Location = new System.Drawing.Point(0, 132);
+            this.button2panel.Location = new System.Drawing.Point(0, 109);
             this.button2panel.Name = "button2panel";
-            this.button2panel.Size = new System.Drawing.Size(491, 75);
+            this.button2panel.Size = new System.Drawing.Size(477, 75);
             this.button2panel.TabIndex = 14;
             this.button2panel.UseTransparentBackground = true;
             // 
@@ -191,7 +276,7 @@
             this.Button2Enable.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button2Enable.ForeColor = System.Drawing.Color.White;
             this.Button2Enable.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.Button2Enable.Location = new System.Drawing.Point(14, 24);
+            this.Button2Enable.Location = new System.Drawing.Point(9, 24);
             this.Button2Enable.Name = "Button2Enable";
             this.Button2Enable.PressedColor = System.Drawing.Color.Transparent;
             this.Button2Enable.PressedDepth = 0;
@@ -219,7 +304,7 @@
             this.ButtonLink2.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLink2.ForeColor = System.Drawing.Color.White;
             this.ButtonLink2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ButtonLink2.Location = new System.Drawing.Point(353, 24);
+            this.ButtonLink2.Location = new System.Drawing.Point(332, 24);
             this.ButtonLink2.Name = "ButtonLink2";
             this.ButtonLink2.PasswordChar = '\0';
             this.ButtonLink2.PlaceholderText = "ButtonLink";
@@ -245,7 +330,7 @@
             this.ButtonText2.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonText2.ForeColor = System.Drawing.Color.White;
             this.ButtonText2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ButtonText2.Location = new System.Drawing.Point(212, 24);
+            this.ButtonText2.Location = new System.Drawing.Point(191, 24);
             this.ButtonText2.Name = "ButtonText2";
             this.ButtonText2.PasswordChar = '\0';
             this.ButtonText2.PlaceholderText = "ButtonText";
@@ -259,9 +344,9 @@
             this.button1panel.Controls.Add(this.Button1Enable);
             this.button1panel.Controls.Add(this.ButtonLink1);
             this.button1panel.Controls.Add(this.ButtonText1);
-            this.button1panel.Location = new System.Drawing.Point(0, 32);
+            this.button1panel.Location = new System.Drawing.Point(0, 16);
             this.button1panel.Name = "button1panel";
-            this.button1panel.Size = new System.Drawing.Size(491, 75);
+            this.button1panel.Size = new System.Drawing.Size(477, 75);
             this.button1panel.TabIndex = 13;
             // 
             // Button1Enable
@@ -278,7 +363,7 @@
             this.Button1Enable.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button1Enable.ForeColor = System.Drawing.Color.White;
             this.Button1Enable.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.Button1Enable.Location = new System.Drawing.Point(14, 20);
+            this.Button1Enable.Location = new System.Drawing.Point(9, 20);
             this.Button1Enable.Name = "Button1Enable";
             this.Button1Enable.PressedColor = System.Drawing.Color.Transparent;
             this.Button1Enable.PressedDepth = 0;
@@ -306,7 +391,7 @@
             this.ButtonLink1.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLink1.ForeColor = System.Drawing.Color.White;
             this.ButtonLink1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ButtonLink1.Location = new System.Drawing.Point(353, 20);
+            this.ButtonLink1.Location = new System.Drawing.Point(332, 20);
             this.ButtonLink1.Name = "ButtonLink1";
             this.ButtonLink1.PasswordChar = '\0';
             this.ButtonLink1.PlaceholderText = "ButtonLink";
@@ -332,7 +417,7 @@
             this.ButtonText1.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonText1.ForeColor = System.Drawing.Color.White;
             this.ButtonText1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ButtonText1.Location = new System.Drawing.Point(212, 20);
+            this.ButtonText1.Location = new System.Drawing.Point(191, 20);
             this.ButtonText1.Name = "ButtonText1";
             this.ButtonText1.PasswordChar = '\0';
             this.ButtonText1.PlaceholderText = "ButtonText";
@@ -357,12 +442,12 @@
             this.SmallKey.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SmallKey.ForeColor = System.Drawing.Color.White;
             this.SmallKey.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SmallKey.Location = new System.Drawing.Point(177, 349);
+            this.SmallKey.Location = new System.Drawing.Point(118, 293);
             this.SmallKey.Name = "SmallKey";
             this.SmallKey.PasswordChar = '\0';
             this.SmallKey.PlaceholderText = "SmallKey";
             this.SmallKey.SelectedText = "";
-            this.SmallKey.Size = new System.Drawing.Size(135, 34);
+            this.SmallKey.Size = new System.Drawing.Size(100, 34);
             this.SmallKey.TabIndex = 5;
             // 
             // LargeKey
@@ -382,12 +467,12 @@
             this.LargeKey.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LargeKey.ForeColor = System.Drawing.Color.White;
             this.LargeKey.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LargeKey.Location = new System.Drawing.Point(12, 349);
+            this.LargeKey.Location = new System.Drawing.Point(12, 293);
             this.LargeKey.Name = "LargeKey";
             this.LargeKey.PasswordChar = '\0';
             this.LargeKey.PlaceholderText = "LargeKey";
             this.LargeKey.SelectedText = "";
-            this.LargeKey.Size = new System.Drawing.Size(135, 34);
+            this.LargeKey.Size = new System.Drawing.Size(100, 34);
             this.LargeKey.TabIndex = 4;
             // 
             // State
@@ -407,12 +492,12 @@
             this.State.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.State.ForeColor = System.Drawing.Color.White;
             this.State.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.State.Location = new System.Drawing.Point(12, 245);
+            this.State.Location = new System.Drawing.Point(12, 210);
             this.State.Name = "State";
             this.State.PasswordChar = '\0';
             this.State.PlaceholderText = "State";
             this.State.SelectedText = "";
-            this.State.Size = new System.Drawing.Size(300, 34);
+            this.State.Size = new System.Drawing.Size(206, 34);
             this.State.TabIndex = 3;
             // 
             // Details
@@ -432,12 +517,12 @@
             this.Details.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Details.ForeColor = System.Drawing.Color.White;
             this.Details.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Details.Location = new System.Drawing.Point(12, 141);
+            this.Details.Location = new System.Drawing.Point(12, 127);
             this.Details.Name = "Details";
             this.Details.PasswordChar = '\0';
             this.Details.PlaceholderText = "Details";
             this.Details.SelectedText = "";
-            this.Details.Size = new System.Drawing.Size(300, 34);
+            this.Details.Size = new System.Drawing.Size(206, 34);
             this.Details.TabIndex = 2;
             // 
             // ID
@@ -457,20 +542,18 @@
             this.ID.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ID.ForeColor = System.Drawing.Color.White;
             this.ID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ID.Location = new System.Drawing.Point(12, 37);
+            this.ID.Location = new System.Drawing.Point(12, 44);
             this.ID.Name = "ID";
             this.ID.PasswordChar = '\0';
             this.ID.PlaceholderText = "Client ID";
             this.ID.SelectedText = "";
-            this.ID.Size = new System.Drawing.Size(300, 34);
+            this.ID.Size = new System.Drawing.Size(206, 34);
             this.ID.TabIndex = 1;
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel2.BorderRadius = 10;
-            this.guna2Panel2.Controls.Add(this.UpdateBtn);
-            this.guna2Panel2.Controls.Add(this.Initialize);
             this.guna2Panel2.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel2.Controls.Add(this.label3);
             this.guna2Panel2.Controls.Add(this.label2);
@@ -478,58 +561,10 @@
             this.guna2Panel2.CustomizableEdges.BottomRight = false;
             this.guna2Panel2.CustomizableEdges.TopRight = false;
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(855, 0);
+            this.guna2Panel2.Location = new System.Drawing.Point(708, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(200, 420);
+            this.guna2Panel2.Size = new System.Drawing.Size(200, 394);
             this.guna2Panel2.TabIndex = 0;
-            // 
-            // UpdateBtn
-            // 
-            this.UpdateBtn.Animated = true;
-            this.UpdateBtn.BackColor = System.Drawing.Color.Transparent;
-            this.UpdateBtn.BorderRadius = 10;
-            this.UpdateBtn.Cursor = System.Windows.Forms.Cursors.Default;
-            this.UpdateBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpdateBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UpdateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.UpdateBtn.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateBtn.ForeColor = System.Drawing.Color.White;
-            this.UpdateBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.UpdateBtn.Location = new System.Drawing.Point(25, 338);
-            this.UpdateBtn.Name = "UpdateBtn";
-            this.UpdateBtn.PressedColor = System.Drawing.Color.Transparent;
-            this.UpdateBtn.PressedDepth = 0;
-            this.UpdateBtn.Size = new System.Drawing.Size(151, 45);
-            this.UpdateBtn.TabIndex = 4;
-            this.UpdateBtn.Text = "Update";
-            this.UpdateBtn.UseTransparentBackground = true;
-            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
-            // 
-            // Initialize
-            // 
-            this.Initialize.Animated = true;
-            this.Initialize.BackColor = System.Drawing.Color.Transparent;
-            this.Initialize.BorderRadius = 10;
-            this.Initialize.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Initialize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Initialize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Initialize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Initialize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Initialize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.Initialize.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Initialize.ForeColor = System.Drawing.Color.White;
-            this.Initialize.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.Initialize.Location = new System.Drawing.Point(25, 287);
-            this.Initialize.Name = "Initialize";
-            this.Initialize.PressedColor = System.Drawing.Color.Transparent;
-            this.Initialize.PressedDepth = 0;
-            this.Initialize.Size = new System.Drawing.Size(151, 45);
-            this.Initialize.TabIndex = 1;
-            this.Initialize.Text = "Initialize";
-            this.Initialize.UseTransparentBackground = true;
-            this.Initialize.Click += new System.EventHandler(this.Initialize_Click);
             // 
             // guna2CirclePictureBox1
             // 
@@ -582,6 +617,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Not Initialized";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Button1
             // 
@@ -620,7 +656,7 @@
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1010, 0);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(863, 0);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.PressedColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.PressedDepth = 0;
@@ -638,7 +674,7 @@
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.HoverState.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.guna2ControlBox2.Location = new System.Drawing.Point(954, 0);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(807, 0);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.PressedColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.PressedDepth = 0;
@@ -671,7 +707,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(1055, 450);
+            this.ClientSize = new System.Drawing.Size(908, 424);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2Panel1);
@@ -725,6 +761,8 @@
         private Guna.UI2.WinForms.Guna2Button Button1Enable;
         private System.Windows.Forms.NotifyIcon notifyIcon2;
         private System.Windows.Forms.NotifyIcon notifyIcon3;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
     }
 }
 

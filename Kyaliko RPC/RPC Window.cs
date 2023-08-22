@@ -12,6 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Button = DiscordRPC.Button;
+using System.CodeDom;
 
 namespace Kyaliko_RPC
 {
@@ -68,8 +69,16 @@ namespace Kyaliko_RPC
         }
         private void lblimg()
         {
-            this.label1.Text = this.client.CurrentUser.Username + "#" + this.client.CurrentUser.Discriminator.ToString();
-            this.guna2CirclePictureBox1.Load(this.client.CurrentUser.GetAvatarURL(User.AvatarFormat.PNG, User.AvatarSize.x128));
+            try
+            {
+                this.label1.Text = this.client.CurrentUser.Username;
+                this.guna2CirclePictureBox1.Load(this.client.CurrentUser.GetAvatarURL(User.AvatarFormat.PNG, User.AvatarSize.x128));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "uh oh");
+            }
+            
         }
         public void reini()
         {
@@ -105,7 +114,7 @@ namespace Kyaliko_RPC
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            web1.Size = new Size(1055, 420);
+            web1.Size = new Size(924, 394);
             web1.Visible = true;
             guna2ControlBox2.Visible = true;
         }
@@ -135,7 +144,11 @@ namespace Kyaliko_RPC
                         SmallImageText = this.SmallText.Text,
                     };
                     uwu.State = State.Text;
-                    uwu.Timestamps = Timestamps.Now;
+                    if (guna2ToggleSwitch1.Checked)
+                    {
+                        uwu.Timestamps = Timestamps.Now;
+                    }
+                    
                     if (button1enabled == true)
                     {
                         uwu.Buttons = new Button[]
@@ -236,6 +249,16 @@ namespace Kyaliko_RPC
             button2enabled = false;
             ButtonText2.Enabled = false;
             ButtonLink2.Enabled = false;
+        }
+
+        private void guna2ToggleSwitch1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
